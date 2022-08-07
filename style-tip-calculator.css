@@ -50,6 +50,7 @@ body {
 
 .container {
     width: 50%;
+    min-width: 360px;
     padding: 2em;
     background-color: #fff;
     box-shadow: 10px 10px 37px -6px rgba(127, 156, 159, 0.75);
