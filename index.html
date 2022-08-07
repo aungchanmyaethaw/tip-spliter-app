@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tip Calculator App</title>
+        <link rel="stylesheet" href="style-tip-calculator.css" />
+        <script
+            src="https://kit.fontawesome.com/bb827868b4.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!--- Main --->
+        <h1 class="heading">Spli<br />ter</h1>
+
+        <section class="container">
+            <!-- heading -->
+
+            <div class="row">
+                <!--- First-col --->
+                <div class="col">
+                    <div class="bill">
+                        <label for="bill">Bill</label>
+                        <div class="bill-input">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <input
+                                type="number"
+                                name=""
+                                id="bill"
+                                placeholder="0"
+                                data-bill
+                            />
+                        </div>
+                    </div>
+
+                    <div class="tip-options">
+                        <h5>Select Tips %</h5>
+
+                        <div class="tip-btn-group">
+                            <button value="0.05" class="tip-btn selected">
+                                5%
+                            </button>
+                            <button value="10" class="tip-btn">10%</button>
+                            <button value="15" class="tip-btn">15%</button>
+                            <button value="25" class="tip-btn">25%</button>
+                            <button value="50" class="tip-btn">50%</button>
+                            <input
+                                type="number"
+                                placeholder="Custom"
+                                class="tip-btn custom-tip"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="people">
+                        <label for="people">Number of People</label>
+                        <div class="people-input">
+                            <i class="fa-solid fa-user"></i>
+                            <input
+                                type="number"
+                                name=""
+                                id="people"
+                                placeholder="0"
+                                data-people
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!--- Second-col --->
+                <div class="col row">
+                    <ul class="amounts">
+                        <div class="tip-amount row">
+                            <div class="col">
+                                <p>Tip Amount</p>
+                                <span>/person</span>
+                            </div>
+
+                            <span class="col" data-tip-person>$0.00</span>
+                        </div>
+                        <div class="total-amount row">
+                            <div class="col">
+                                <p>Total</p>
+                                <span>/person</span>
+                            </div>
+
+                            <span class="col" data-total-person>$0.00</span>
+                        </div>
+                    </ul>
+                    <button class="reset" data-reset>Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <!--- Script --->
+        <script src="tip-calculator-app.js"></script>
+    </body>
+</html>
